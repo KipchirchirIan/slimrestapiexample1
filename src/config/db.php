@@ -9,10 +9,10 @@
  */
 
 class Db {
-    private $dbhost = 'localhost:3306';
+    private $dbhost = 'host';
     private $dbuser = 'root';
-    private $dbpass = 'Qw12Er34';
-    private $dbname = 'mercurial_slimapi';
+    private $dbpass = '1234';
+    private $dbname = 'db';
 
     public function connect()
     {
