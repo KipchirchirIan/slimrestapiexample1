@@ -4,7 +4,8 @@
     "type": "project",
     "require": {
         "slim/slim": "^4.5",
-        "slim/psr7": "^1.0"
+        "slim/psr7": "^1.0",
+        "vlucas/phpdotenv": "^4.1"
     },
     "authors": [
         {
