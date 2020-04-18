@@ -9,10 +9,10 @@
  */
 
 class Db {
-    private $dbhost = 'host';
-    private $dbuser = 'root';
-    private $dbpass = '1234';
-    private $dbname = 'db';
+    private $dbhost = DB_HOST;
+    private $dbuser = DB_USER;
+    private $dbpass = DB_PASS;
+    private $dbname = DB_NAME;
 
     public function connect()
     {
