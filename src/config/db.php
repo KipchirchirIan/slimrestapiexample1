@@ -9,7 +9,7 @@
  */
 
 class Db {
-    private $dbhost = 'localhost';
+    private $dbhost = 'localhost:3306';
     private $dbuser = 'root';
     private $dbpass = 'Qw12Er34';
     private $dbname = 'mercurial_slimapi';
