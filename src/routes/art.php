@@ -85,6 +85,6 @@ return function (App $app) {
             $response->getBody()->write($payload);
         }
 
-        return $response;
+        return $response->withHeader('Content-Type', 'application/json');
     });
 };
