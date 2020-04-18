@@ -1,0 +1,14 @@
+{
+    "name": "kipchirchirian/slimrestapitest1",
+    "description": "A demo on creating a REST API using the Slim framework",
+    "type": "project",
+    "require": {
+        "slim/slim": "^4.5"
+    },
+    "authors": [
+        {
+            "name": "KipchirchirIan",
+            "email": "potterke4@gmail.com"
+        }
+    ]
+}
