@@ -28,10 +28,14 @@ $app->addRoutingMiddleware();
 $errorMiddleware = $app->addErrorMiddleware(true, false, false);
 
 // test route
-$app->get('/', function (Request $request, Response $response, $args) {
+$app->get('/', function (Request $request, Response $response) {
     $response->getBody()->write("Welcome!!");
     return $response;
 });
+
+// Include Art routes
+$art_routes = require __DIR__ . '/../src/routes/art.php';
+$art_routes($app);
 
 // Execute application
 $app->run();
