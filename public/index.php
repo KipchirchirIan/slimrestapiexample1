@@ -16,10 +16,11 @@ use Slim\Factory\AppFactory;
 require __DIR__ . '/../vendor/autoload.php';
 
 // Load environment variables
-$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
 
 // Include the DB connection file
+require __DIR__ . '/../src/config/config.php';
 require __DIR__ . '/../src/config/db.php';
 
 // Create a Slim instance
