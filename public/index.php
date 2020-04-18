@@ -27,5 +27,11 @@ $app->addRoutingMiddleware();
 // Add Error handling middleware
 $errorMiddleware = $app->addErrorMiddleware(true, false, false);
 
+// test route
+$app->get('/', function (Request $request, Response $response, $args) {
+    $response->getBody()->write("Welcome!!");
+    return $response;
+});
+
 // Execute application
 $app->run();
